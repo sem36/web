@@ -1,0 +1,10 @@
+nav.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #2299d9; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+    color: #2299d9;
+   }
+div1{
+    display: inline-block;
+}
