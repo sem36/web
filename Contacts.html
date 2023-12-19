@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My beautiful website</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="JS/ScriptForm.js" defer></script>
+</head>
+<body>
+    <header>
+        <div><img src="img/logo.png" width="100" height="100"></div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">О себе</a></li>
+                <li><a href="Index.html#comps">Что я умею</a></li>
+                <li><a href="Rezume.html">Резюме</a></li>
+                <li><a href="Interests.html">Мои интересы</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+                <label>
+                    <input type="checkbox" id="themeToggle">
+                    Темная тема
+                </label>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <form action="#" method="get" id="form">
+            <div><label class="align-center">Ваше имя <input type="text" placeholder="Введите ФИО" id="name"></label><br></div>
+            <div id="emailFld"><label class="align-center">Адрес почты <input type="email" placeholder="Введите адрес почты" id="mail"></label><br></div>
+            <div id="phoneFld"><label class="align-center">Номер телефона <input type="tel" placeholder="Введите номер телефона" id="phone"></label><br></div>
+            <div id="dateFld"><label class="align-center">Дата встречи <input type="date" id="dat"></label><br></div>
+            <div id="urlFld"><label class="align-center">Введите URL-адрес<input type="url" placeholder="URL-адрес" id="url"></label><br></div>
+            <br>
+            <h2>Добавить способ ответа:</h2>
+            <div>
+                <label><input type="radio" name="answer" value="meet">Назначить встречу</label><br>
+                <label><input type="radio" name="answer" value="tel">Телефон</label><br>
+                <label><input type="radio" name="answer" value="other">Другое</label><br>
+                <label><input type="radio" name="answer" value="noansware">Не надо отвечать</label><br>
+            </div>
+            <br>
+            <div class="form-div">
+                <label for="theme">Укажите тему:</label><br>
+                <select name="theme" id="theme" class="input-text">
+                    <option value="work">Работа</option>
+                    <option value="learning">Учёба</option>
+                    <option value="private">Личное</option>
+                    <option value="hobby">Досуг</option>
+                </select>
+            </div>
+            <br>
+            <h2>Что по учёбе?</h2>
+            <div>
+                <label><input type="checkbox" name="study"  value="help">Нужна помощь</label><br>
+                <label><input type="checkbox" name="study"  value="coop">Сотрудничество по заданию</label><br>
+                <label><input type="checkbox" name="study"  value="donetasks">Ответы и готовые задания</label><br>
+                <label><input type="checkbox" name="study"  value="session">Подготовка к сессии</label><br>
+            </div>
+            <br>
+            <div class="form-div">
+                <div>Ваше сообщение</div>
+                <div>
+                    <textarea cols="40" rows="10" placeholder="Введите вопрос или предложение" id="text"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="align-center">
+                <button id="submit">Отправить</button>
+                <button id="reset">Очистить форму</button>
+            </div>
+        </form>
+    </main>
+    <br>
+    <footer>
+        <div>
+            <p>сайт сделан лапками</p>
+            <img src="img/logo.png" width="60" height="60">
+        </div>
+    </footer>
+</body>
+</html>

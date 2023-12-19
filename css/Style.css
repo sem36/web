@@ -1,0 +1,184 @@
+table{min-width: 90%;text-align: center;}
+*{margin: 0; padding: 0;}
+body{display: flex; flex-direction: column; padding: 0; margin: 0; min-height: 100vh; font-family: Arial, sans-serif; transition: background-color 0.3s, color 0.3s; max-width: 1800;}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;}
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.jora {
+    max-width: 100%; /* Чтобы изображение не выходило за пределы контейнера */
+    height: auto;
+    margin-left: 30px; /* Добавьте отступ по желанию */
+}
+.header{display: flex; flex-direction: row; align-items: start; justify-content:safe;}
+.flex_page{display: flex; flex-direction: column; min-height: 100vh;}
+footer {background-color: #e803fd;padding: 20px;text-align: center; color: black}
+.hidden{display: none;}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-container {
+    display: flex;
+    gap: 10px;
+}
+
+.time-btncontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btncontainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#time {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.show{display: block;}
+.slider-controls button {
+    background-color: rgb(175, 76, 162);
+    color: rgb(18, 16, 16);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.slider-container {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.sliderline {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-img {
+    width: 300px;
+    height: 200px;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+table {
+    border: 2px solid #000;
+    width: 80%; /* Ширина таблицы */
+    margin-top: 20px; /* Верхний отступ для выравнивания */
+}
+nav li {
+    margin-right: 14px; /* Регулируйте промежутки между элементами */
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit; /* Используем inherit, чтобы цвет наследовался от родительского элемента (body) */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #3498db; /* Цвет при наведении */
+}
+.uj {
+    list-style-type: disc; /* Тип маркера - кружок */
+    margin-left: 20px; /* Отступ слева */
+    flex: 1;
+    padding: 0;
+}
+/* Стили для светлой темы */
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+/* Стили для темной темы */
+.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 2px solid #000;
+    padding: 8px;
+}
+.spisks {
+    display: flex;
+}
+#myModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+
+/* Стили для кнопки */
+button {
+    cursor: pointer;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Optional: Add space between items */
+}
+
+.pictures div {
+    margin-right: 10px; /* Optional: Add some spacing between images */
+}
